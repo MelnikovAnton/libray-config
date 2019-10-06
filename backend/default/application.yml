@@ -10,6 +10,7 @@ logging:
         data.mongodb.core.MongoTemplate: INFO
 
 server:
+  port: 8080
   error:
     whitelabel:
       enabled: false
