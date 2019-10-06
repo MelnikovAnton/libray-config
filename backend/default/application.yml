@@ -1,7 +1,7 @@
 logging:
   file: log/log.log
   level:
-    root: INFO
+    root: TRACE
     org:
       springframework:
         security: WARN
