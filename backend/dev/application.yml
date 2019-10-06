@@ -42,9 +42,6 @@ spring:
       uri: ${MONGO}
       port: 27017
       database: library
-  profiles:
-    active: @profile@
-
 
 security:
   oauth2:
