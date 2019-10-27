@@ -23,6 +23,6 @@ spring:
   data:
     mongodb:
       #      uri: mongodb://localhost
-      uri: mongodb://localhost
+      uri: ${MONGO}
       port: 27017
       database: library

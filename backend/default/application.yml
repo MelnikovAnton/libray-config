@@ -8,7 +8,6 @@ logging:
         boot:
           autoconfigure: INFO
         data.mongodb.core.MongoTemplate: INFO
-
 server:
   port: 8080
   error:
@@ -34,20 +33,16 @@ management:
       enabled: true
 
 
-
 spring:
   application:
     name: backend
   data:
     mongodb:
-      #      uri: mongodb://localhost
-      uri: mongodb://localhost
+      uri: ${MONGO}
       port: 27017
       database: library
 
 security:
   oauth2:
-    client:
-      client-id: client
-      client-secret: secret
-
+    resource:
+      tokenInfoUri: http://localhost:8081/oauth/check_token

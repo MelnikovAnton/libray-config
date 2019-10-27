@@ -1,0 +1,29 @@
+security:
+  oauth2:
+    client:
+      accessTokenUri: http://oauth-server:8081/oauth/token
+      userAuthorizationUri: http://oauth-server:8081/oauth/authorize
+      clientId: client
+      clientSecret: secret
+    resource:
+      tokenInfoUri: http://oauth-server:8081/oauth/check_token
+
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  routes:
+    #    library-api:
+    #      path: /backend/**
+    #      url: http://localhost:8080/
+    oauth:
+      path: /oauth/**
+      url: http://oauth-server:8081/oauth
+
+logging:
+  #  file: log/log.log
+  level:
+    root: INFO
+    org:
+      springframework:
+        security: INFO
+
