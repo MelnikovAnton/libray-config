@@ -44,5 +44,8 @@ spring:
 
 security:
   oauth2:
+    client:
+      clientId: client
+      clientSecret: secret
     resource:
       tokenInfoUri: http://oauth-server:8081/oauth/check_token
