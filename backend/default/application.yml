@@ -46,3 +46,5 @@ security:
   oauth2:
     resource:
       tokenInfoUri: http://oauth-server:8081/oauth/check_token
+      clientId: client
+      clientSecret: secret
