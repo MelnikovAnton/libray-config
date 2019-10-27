@@ -1,7 +1,3 @@
-# Make the application available at http://localhost:7070/authserver
-server:
-  port: 8081
-
 # Our certificate settings for enabling JWT tokens
 jwt:
   certificate:

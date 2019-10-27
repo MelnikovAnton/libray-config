@@ -45,4 +45,4 @@ spring:
 security:
   oauth2:
     resource:
-      tokenInfoUri: http://localhost:8081/oauth/check_token
+      tokenInfoUri: http://oauth-server:8081/oauth/check_token
